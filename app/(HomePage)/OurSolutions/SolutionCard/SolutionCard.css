@@ -1,0 +1,70 @@
+.solution_card {
+  padding: 70px 40px 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 350ms ease-in-out;
+  height: 344px;
+  position: relative;
+}
+.solution_card .s_svg{
+  transition: all 1s ease-in-out;
+   position: absolute;
+   top: 18%;
+    left: 14%;
+}
+.solution_card:hover .s_svg{
+   top: 33%;
+    left: 34%;
+}
+.solution_card .s_svg svg{
+  transition: all 1s ease-in-out;
+}
+.solution_card:hover .s_svg svg{
+  width: 118px;
+  height: 118px;
+  transition: all 1s ease-in-out;
+}
+.solution_card.bg_one{
+  background-color: var(--primary-color);
+  background-image: url(../../../../public/solutions/sc.svg);
+
+}
+.solution_card.bg_two{
+  background-color: #363853;
+  background-image: url(../../../../public/solutions/sc2.svg);
+
+}
+.solution_card.bg_three{
+  background-color:#00A6D5;;
+  background-image: url(../../../../public/solutions/sc3.svg);
+
+}
+.solution_card .desc h1 {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 100% */
+  letter-spacing: 0.036px;
+  padding-top: 100px;
+  padding-bottom: 17px;
+}
+.solution_card .desc p{
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.02px;
+  padding-top: 17px;
+  border-top: 1px solid var(--gray-4);
+}
+.solution_card .desc {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .solution_card:hover .desc {
+    opacity: 0;
+  }
+  

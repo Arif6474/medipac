@@ -1,0 +1,170 @@
+.banner-section {
+  width: 100vw;
+  height: 100vh;
+
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+#video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  overflow: hidden;
+}
+.image-container {
+  display: none;
+}
+.banner-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+#content {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+#content {
+  max-width: 773px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#content .welcome {
+  color: #fff;
+  font-family: "Futura Md BT";
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.038px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+#content p {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-family: "Futura Md BT";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.026px;
+  padding-top: 16px;
+}
+#content h1 {
+  color: var(--white);
+  width: 100%;
+  text-align: center;
+  font-family: "Futura Bd", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 75px; /* 125% */
+  letter-spacing: 0.09px;
+  text-transform: uppercase;
+  padding-top: 32px;
+}
+.horizontal-line {
+  width: 64px;
+  height: 2px;
+  background-color: #fff;
+  /* margin: 0 auto; */
+}
+
+#content button {
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 18px 68px;
+  border-radius: 50px;
+  background: var(--primary-color);
+  margin-top: 2.5rem;
+}
+
+#banner-image {
+  display: none;
+}
+#content .banner_btn .btn{
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: all 0.5s ease-in-out;
+}
+#content .banner_btn:hover .btn{
+  background-color: #0fa7d1;
+  border: 1px solid #0fa7d1;
+}
+#content .banner_btn .btn span{
+  color: var(--white);
+}
+#content .banner_btn:hover .btn span{
+  color: var(--white);
+}
+@media (orientation: portrait) {
+  .banner-section {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #video-container {
+    display: none;
+  }
+
+  .banner-image {
+    display: block;
+    height: 602px;
+  }
+  .banner-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #content {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+  }
+  #content {
+    top: 50%;
+    width: 100%;
+    padding: 0px 21px;
+  }
+
+  #content .welcome {
+    font-size: 17px;
+    padding-bottom: 5px;
+  }
+  #content h1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.036px;
+    text-transform: uppercase;
+    padding-top: 24px;
+  }
+  #content p {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.02px;
+  }
+  #content button {
+    font-size: 15px;
+    margin-top: 24px;
+  }
+}

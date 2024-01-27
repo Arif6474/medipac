@@ -1,0 +1,238 @@
+#contactUs {
+  /* height: 100vh;  */
+  margin: 0 auto;
+}
+#contactUs .contact_sec {
+  position: relative;
+}
+
+.contact_bg {
+  width: 100%;
+  height: 810px;
+}
+.contact_bg .overlay {
+  width: 100%;
+  height: 810px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.contact_bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact-from {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+.contact_sec .contact-from {
+  width: 595px;
+  height: 710px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: var(--primary-color);
+  margin: 0 auto;
+  top: 5vh;
+  right: -50vw;
+}
+.grid_item {
+  width: 100%;
+}
+
+.contact_section_title_wrapper p {
+  font-weight: 200;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  margin-bottom: 0.625rem;
+  color: #00a361;
+}
+
+.contact_section_title_wrapper h2 {
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: normal;
+  color: #333;
+  padding: 0.625rem 0;
+}
+.contact_section_title_wrapper h3 {
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  padding: 0.625rem 0;
+}
+.contact_section_title_wrapper .con_item h3 {
+  color: #666;
+  font-family: var(--font-k2d);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  text-transform: uppercase;
+}
+.contact_section_title_wrapper .con_item {
+  padding: 1.25rem 0;
+}
+.contact_section_title_wrapper .con_item p {
+  color: #333;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
+}
+
+.form_wrapper {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 52px 65px;
+}
+.form_wrapper textarea {
+  height: 140px;
+}
+.form_wrapper h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.048px;
+}
+.form_wrapper p {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.026px;
+}
+/* .contact_sec .form_wrapper .btn {
+  display: inline-block;
+  margin-top: 1rem;
+} */
+.contact_sec .form_wrapper,
+.input_item {
+  min-width: 100%;
+}
+.input_label {
+  width: 100%;
+}
+.input_label label {
+  color: #fff;
+  font-family: "Futura Md BT";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 152.941% */
+  letter-spacing: 0.026px;
+}
+.contact_sec .form_wrapper .input_item {
+  padding: 15px 0 15px 22px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  color: #fff;
+  opacity: 0.5;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 200% */
+  letter-spacing: 0.02px;
+  background-color: transparent;
+}
+.contact_sec .form_wrapper .input_item::placeholder {
+  color: var(--white);
+}
+.contact_sec .form_wrapper .input_item:hover {
+  border: 1px solid #fff;
+}
+.contact_btn {
+  width: 100%;
+  border-radius: 50px;
+  background: #fff;
+  padding: 18px 0;
+  text-align: center;
+  transition: background-color 0.5s ease-in-out;
+}
+.contact_btn:hover {
+  background: #027797;
+}
+.contact_btn button {
+  width: 100%;
+}
+.contact_btn button span {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.026px;
+  text-transform: uppercase;
+}
+.contact_btn:hover button span {
+  color: #fff;
+}
+.contact_bg .small_image {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .form_wrapper {
+    width: 10%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+  }
+  .contact_bg {
+    width: 100%;
+    height: 760px;
+    /* padding: 50px 20px; */
+  }
+  .contact_sec .contact-from {
+    width: 90%;
+    height: auto;
+    border-radius: 6px;
+    margin: 0 auto;
+    top: 50px;
+    right: 0;
+    left: 0;
+    bottom: 50px;
+    padding: 30px 25px;
+  }
+  .form_wrapper h1 {
+    font-size: 24px;
+  }
+  .form_wrapper p {
+    font-size: 15px;
+  }
+  .input_label label {
+    font-size: 15px;
+  }
+  .contact_bg .large_image {
+    display: none;
+  }
+  .contact_bg .small_image {
+    display: block;
+  }
+  .contact_btn button span {
+    font-size: 15px;
+  }
+  .contact_section_title_wrapper P {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .contact_section_title_wrapper h2 {
+    font-size: 2.1875rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+  }
+}

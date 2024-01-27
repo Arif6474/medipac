@@ -1,0 +1,50 @@
+.our_solutions{
+    margin-top: -40px; /* Adjust to overlap with the lower section */
+    position: relative;
+    z-index: 2;
+}
+.solution_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.solution_wrapper > :nth-child(1) {
+  grid-column: 1 / span 2;
+}
+.solution_image {
+  height: 344px;
+}
+.solution_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.solution_image .small{
+  display: none;
+}
+@media (orientation: portrait) {
+  .our_solutions .container{
+    max-width: 100%;
+    padding: 0;
+  }
+  .our_solutions{
+    margin-top: 0;
+    position: relative;
+    z-index: 2;
+}
+  .solution_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .solution_wrapper > :nth-child(1) {
+    grid-column: 1 / span 1;
+  }
+  .solution_image.show{
+    display: none;
+  }
+  .solution_image .large{
+    display: none;
+  }
+  .solution_image .small{
+    display: block;
+  }
+}

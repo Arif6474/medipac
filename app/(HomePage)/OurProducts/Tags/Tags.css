@@ -1,0 +1,29 @@
+
+.product_tags{
+    padding-top: 24px;
+}
+.product_tag {
+  border-radius: 50px;
+  border: 1px solid #fff;
+  padding: 11px 31px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 10px;
+}
+.product_tags p {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+.product_tag.active {
+  border: 1px solid #fff;
+  background: #fff;
+ 
+}
+.product_tag .active {
+    color: var(--primary-color);
+  }

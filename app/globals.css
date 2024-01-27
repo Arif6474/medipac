@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Futura Md BT";
+  src: url("/fonts/FuturaMediumBT.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Md";
+  src: url("/fonts/FutuMd.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Bd";
+  src: url("/fonts/FutuBd.ttf") format("truetype");
+}
+
+:root {
+  --containerPadding: 1.5rem;
+  --containerWidth: 90rem;
+  --primary-color: #016885;
+  --black-1: #111;
+}
+
+body {
+  font-family: "Futura Md BT", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  background-color: var(--white);
+}
+
+/* >>== utility start ==<< */
+.container,
+.container_fluid {
+  width: 100%;
+  padding: 0 var(--containerPadding);
+}
+
+.container {
+  max-width: calc(var(--containerWidth) + (var(--containerPadding) * 2));
+  margin: 0 auto;
+}
+
+.w_100 {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Futura Md BT", sans-serif;
+}
+
+.section_title_wrapper {
+  text-align: center;
+  margin-bottom: 6.25rem;
+}
+
+.section_title_wrapper p {
+  font-weight: 200;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  margin-bottom: 0.625rem;
+  color: #00a361;
+}
+
+.section_title_wrapper h2 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: normal;
+  color: #333;
+}
+
+.pt_10,
+.py_10 {
+  padding-top: 6.25rem;
+}
+
+.pb_10,
+.py_10 {
+  padding-bottom: 6.25rem;
+}
+.pb_6,
+.py_6 {
+  padding-bottom: 60px;
+}
+
+.btn {
+  padding: 20px 50px;
+  border-radius: 50px;
+  border-radius: 50px;
+  border: 1px solid var(--primary-color);
+  background: var(--white);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.btn span {
+  color: var(--primary-color);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.023px;
+  text-transform: uppercase;
+}
+
+.desc_box p {
+  /* font-weight: 200; */
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.desc_box p:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+.read_more {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition:  all 0.5s ease-in-out;
+}
+.read_more p {
+  color: #151515;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.02px;
+  text-decoration-line: underline;
+}
+.read_more:hover {
+  background: #00a6d5;
+}
+.read_more:hover p {
+  color: #fff;
+}
+.read_more:hover p > svg path{
+  fill: #fff;
+}
+@media (max-width: 767.98px) {
+  .section_title_wrapper {
+    margin-bottom: 3.125rem;
+  }
+
+  .section_title_wrapper p {
+    font-size: 0.875rem;
+  }
+
+  .section_title_wrapper h2 {
+    font-size: 2.1875rem;
+    line-height: 2.75rem;
+  }
+
+  .pt_10,
+  .py_10 {
+    padding-top: 3.125rem;
+  }
+
+  .pb_10,
+  .py_10 {
+    padding-top: 3.125rem;
+  }
+  .mt_10,
+  .my_10 {
+    margin-top: 3.125rem;
+  }
+  .desc_box p {
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+  }
+
+  .desc_box p:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+}

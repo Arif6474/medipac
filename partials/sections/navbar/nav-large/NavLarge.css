@@ -1,0 +1,54 @@
+.nav_large {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_large .logo_wrapper {
+  width: 13.5rem;
+}
+
+.nav_large .btn_nst {
+  display: none;
+}
+
+.nav_large nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav_large nav > a {
+  color: #fafafa;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.026px;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav_large nav > a:not(:last-child) {
+  margin-right: 3.75rem;
+}
+
+
+.nav_large nav > a.active {
+  font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+  .nav_large nav {
+    display: none;
+  }
+
+  .nav_large .btn_nst {
+    display: block;
+  }
+  .nav_large .btn_nst svg path{
+    fill: var(--white);
+  }
+
+  .nav_large .logo_wrapper {
+    width: 6.75rem;
+  }
+}
