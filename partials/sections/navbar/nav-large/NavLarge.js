@@ -52,7 +52,7 @@ function NavLarge({ smallNavToggle }) {
                        Resources
                     </Link>
                     <Link
-                        href="#contactUs"
+                        href="contactUs"
                         className={`${activeNav === "contact" ? 'active' : ''}`}
                         onClick={() => setActiveNav('contact')}
                     >
